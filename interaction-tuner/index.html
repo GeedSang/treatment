@@ -5,7 +5,7 @@
   <title>交互节奏调试 Agent</title><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="shell">
+  <div class="app-layout"><aside class="version-rail"><div class="rail-title">版本</div><div id="versionRail" class="version-rail-list"><div class="rail-empty">暂无版本</div></div></aside><main class="shell">
     <header><div><p class="eyebrow">INTERACTION TUNER · MVP</p><h1>交互节奏调试 Agent</h1><p class="sub">把“自然地亮起来”变成可观察、可复测的参数。</p></div><span id="status" class="pill">待测试</span></header>
     <section class="grid">
       <aside class="panel controls"><h2>项目配置</h2><label>项目名称<input id="projectName" value="桌面灯光原型"></label><label>触发事件<input id="triggerText" value="有人靠近"></label><label>反馈动作<input id="feedbackText" value="灯光渐亮"></label><button id="saveProject" class="secondary">保存为项目模板</button><div class="side-history"><h2>版本记录</h2><p>每次调参都保留“为什么”。</p><div id="versions" class="versions"><span>尚未生成版本</span></div><button id="accept" class="confirm" disabled>确认当前体验</button></div>
@@ -19,5 +19,5 @@
       <section class="panel stage"><div class="stage-head"><div><h2>实时模拟</h2><p id="scenario">等待测试轨迹</p></div><div class="lamp" id="lamp"><span></span></div></div><div class="track"><div class="person" id="person">●</div><div class="threshold" id="threshold"></div></div><div class="metrics"><div><b id="response">--</b><small>响应时间</small></div><div><b id="false">--</b><small>误触发</small></div><div><b id="leave">--</b><small>退出时间</small></div></div><div class="diagnosis" id="diagnosis">Agent 将观察“触发事件 → 反馈动作”的三组轨迹，再给出一条可解释的调参建议。</div></section>
     </section>
     <section class="panel" style="padding:20px 22px;margin-top:18px"><div style="display:flex;justify-content:space-between"><div><h2>Agent 工作流</h2><p>像项目协作者一样拆解、执行、复盘。</p></div><button id="export" class="secondary" style="width:auto;margin:0">导出项目说明</button></div><div id="log" style="display:grid;gap:8px;margin-top:14px"><div><i>等待任务</i><span>填写项目后，Agent 会生成调试计划。</span></div></div></section>
-  </main><script src="app.js"></script>
+  </main></div><script src="app.js"></script>
 </body></html>
