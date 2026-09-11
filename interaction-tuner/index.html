@@ -19,5 +19,6 @@
       <section class="panel stage"><div class="stage-head"><div><h2>实时模拟</h2><p id="scenario">等待测试轨迹</p></div><div class="lamp" id="lamp"><span></span></div></div><div class="track"><div class="person" id="person">●</div><div class="threshold" id="threshold"></div></div><div class="metrics"><div><b id="response">--</b><small>响应时间</small></div><div><b id="false">--</b><small>误触发</small></div><div><b id="leave">--</b><small>退出时间</small></div></div><div class="diagnosis" id="diagnosis">Agent 将观察“触发事件 → 反馈动作”的三组轨迹，再给出一条可解释的调参建议。</div></section>
     </section>
     <section class="panel history"><div><h2>版本记录</h2><p>每次调参都保留“为什么”。</p></div><div id="versions" class="versions"><span>尚未生成版本</span></div><button id="accept" class="confirm" disabled>确认当前体验</button></section>
+    <section class="panel" style="padding:20px 22px;margin-top:18px"><div style="display:flex;justify-content:space-between"><div><h2>Agent 工作流</h2><p>像项目协作者一样拆解、执行、复盘。</p></div><button id="export" class="secondary" style="width:auto;margin:0">导出项目说明</button></div><div id="log" style="display:grid;gap:8px;margin-top:14px"><div><i>等待任务</i><span>填写项目后，Agent 会生成调试计划。</span></div></div></section>
   </main><script src="app.js"></script>
 </body></html>
